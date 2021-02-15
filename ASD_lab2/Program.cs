@@ -22,7 +22,7 @@ namespace ASD_lab2
             Extentions.SafeRunning(Menu, $"Index out of bound, should be between 0 and {tasks.Length}");
 
             void Menu()
-            {
+            { 
                 int task = ConsoleReader.ReadInt(0, tasks.Length, "Out of range");
                 tasks[task].SolveTask();
             }
